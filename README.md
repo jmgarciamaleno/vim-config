@@ -76,7 +76,7 @@ This is how it looks like. You can see MiniBuffExplorer showing current buffers 
 
 ## Plugins list
 
-Light plugins which provide the features that I miss in the standard vim:
+Light plugins which provide the features that I miss or improve the standard vim:
 
 - [Ctrl-P](https://github.com/kien/ctrlp.vim)
 - [MiniBuffExplorer](https://github.com/fholgado/minibufexpl.vim)
@@ -91,6 +91,7 @@ Light plugins which provide the features that I miss in the standard vim:
 - [Vim-JSON](https://github.com/elzr/vim-json)
 - [Vim-PHP-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer)
 - [Vim-Twig](https://github.com/beyondwords/vim-twig)
+- [Vim-yaml](https://github.com/stephpy/vim-yaml)
 
 ## Plugins basic commands
 
