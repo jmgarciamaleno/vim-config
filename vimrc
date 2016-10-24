@@ -28,6 +28,7 @@ set nofoldenable " Deactivate fold by default, set foldenable to activate.
 set foldmethod=syntax " Common values: indent, syntax, diff.
 " set foldcolumn=4 " Number of columns that will be used to show the indentation levels on the left.
 let g:php_folding=1 " Better PHP folding.
+set nowrap " Don't wrap lines longer than the screen.
 
 " PLUGINS OPTIONS.
 
@@ -43,6 +44,7 @@ let g:syntastic_mode_map={
     \ 'active_filetypes': [],
     \ 'passive_filetypes': ['html','xml']
 \}
+let g:syntastic_quiet_messages={"type":"style"}
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP " Use phpcomplete plugin omnicode.
 let g:phpcomplete_complete_for_unknown_classes=0 " Don't try to complete unknown classes code.
 let g:multi_cursor_use_default_mapping=0
