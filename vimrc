@@ -28,6 +28,7 @@ set nofoldenable " Deactivate fold by default, set foldenable to activate.
 set foldmethod=syntax " Common values: indent, syntax, diff.
 " set foldcolumn=4 " Number of columns that will be used to show the indentation levels on the left.
 let g:php_folding=1 " Better PHP folding.
+set nowrap " Don't wrap lines longer than the screen.
 
 " PLUGINS OPTIONS.
 
