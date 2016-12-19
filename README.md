@@ -12,6 +12,18 @@ This is how it looks like. You can see MiniBuffExplorer showing current buffers 
 
 ## Install
 
+### Automatic
+
+**Requires bash, curl and git**
+
+Script that backups your `~/.vim` folder and your `~/.vimrc` file, git clones my config in `~/vim-config` and creates symlinks to it.
+
+```bash
+curl https://raw.githubusercontent.com/jmgarciamaleno/vim-config/master/jmgm-vim-install.sh | bash
+```
+
+### Manual
+
 1. Backup your current vim files:
 
     ```bash
@@ -30,6 +42,18 @@ This is how it looks like. You can see MiniBuffExplorer showing current buffers 
     ```
 
 ## Uninstall
+
+### Automatic
+
+**Requires bash, curl and git**
+
+Script that removes my config and restores your `~/.vim` folder and `~/.vimrc` file previously backed up.
+
+```bash
+curl https://raw.githubusercontent.com/jmgarciamaleno/vim-config/master/jmgm-vim-uninstall.sh | bash
+```
+
+### Manual
 
 1. Uninstall this project. Replace `<APP_PATH>` with the path where you installed this project:
 
