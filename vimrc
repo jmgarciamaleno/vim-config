@@ -14,7 +14,7 @@ set autoindent " Auto indent new lines.
 set hlsearch " Highlight search occurrences.
 set wildmenu " Enables bottom menu with a list of completions. Tab cycles through them.
 set colorcolumn=100 " Vertical line indicator.
-set term=xterm-256color " Name of the terminal. Tells vim to display better colors.
+set term=screen-256color " Name of the terminal. Tells vim to display better colors.
 set t_Co=256 " Maximum number of colors that can be displayed.
 set backup " Create a backup file when an existent file is modified.
 set backupdir=~/.vim/backup/ " Backup files path.
