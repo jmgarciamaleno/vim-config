@@ -1,4 +1,4 @@
-" CONFIG OPTIONS.
+" CONFIG OPTIONS
 
 set hidden " Don't close buffers with changes when you open another one.
 set number " Line numbers.
@@ -20,8 +20,7 @@ set backup " Create a backup file when an existent file is modified.
 set backupdir=~/.vim/backup/ " Backup files path.
 set directory=~/.vim/swap/ " Swap (temporal) files path.
 set termguicolors " True color really rocks
-colorscheme onedark
-" colorscheme gruvbox
+colorscheme tender
 let blacklist = ['markdown'] " Array of filetypes where trailing spaces will not be removed on save.
 autocmd BufWritePre * if index(blacklist, &ft) < 0 | :%s/\s\+$//e " Remove trailing spaces on save.
 filetype plugin indent on " Filetype specific detection, plugins and indentation.
@@ -31,7 +30,7 @@ set foldmethod=syntax " Common values: indent, syntax, diff.
 let g:php_folding=1 " Better PHP folding.
 set nowrap " Don't wrap lines longer than the screen.
 
-" PLUGINS OPTIONS.
+" PLUGINS OPTIONS
 
 execute pathogen#infect()
 set background=dark
@@ -59,7 +58,7 @@ let g:tagbar_compact=1
 let g:tagbar_indent=0
 let g:tagbar_show_visibility=1
 
-" MAPPINGS.
+" MAPPINGS
 
 map <C-h> :bp<CR>
 map <C-l> :bn<CR>
