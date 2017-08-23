@@ -2,7 +2,7 @@
 
 set hidden " Don't close buffers with changes when you open another one.
 set number " Line numbers.
-set relativenumber " Numbers relative to the cursor line.
+" set relativenumber " Numbers relative to the cursor line.
 autocmd InsertEnter * silent! :set norelativenumber " Normal numbers in insert mode.
 autocmd InsertLeave * silent! :set relativenumber " Relative numbers in normal mode.
 syntax on " Code syntax.
@@ -15,11 +15,14 @@ set hlsearch " Highlight search occurrences.
 set wildmenu " Enables bottom menu with a list of completions. Tab cycles through them.
 set colorcolumn=100 " Vertical line indicator.
 set term=xterm-256color " Name of the terminal. Tells vim to display better colors.
-set t_Co=256 " Maximum number of colors that can be displayed.
+" set t_Co=256 " Maximum number of colors that can be displayed.
 set backup " Create a backup file when an existent file is modified.
 set backupdir=~/.vim/backup/ " Backup files path.
 set directory=~/.vim/swap/ " Swap (temporal) files path.
-set termguicolors " True color really rocks
+set background=dark
+if !has('termguicolors')
+    set notermguicolors
+endif
 colorscheme tender
 let blacklist = ['markdown'] " Array of filetypes where trailing spaces will not be removed on save.
 autocmd BufWritePre * if index(blacklist, &ft) < 0 | :%s/\s\+$//e " Remove trailing spaces on save.
@@ -33,7 +36,6 @@ set nowrap " Don't wrap lines longer than the screen.
 " PLUGINS OPTIONS
 
 execute pathogen#infect()
-set background=dark
 let g:NERDTreeWinSize=40
 let g:ctrlp_working_path_mode='c'
 let g:ctrlp_open_multiple_files='1'
