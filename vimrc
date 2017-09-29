@@ -20,7 +20,7 @@ set backup " Create a backup file when an existent file is modified.
 set backupdir=~/.vim/backup/ " Backup files path.
 set directory=~/.vim/swap/ " Swap (temporal) files path.
 set background=dark
-if !has('termguicolors')
+if !has('termguicolors') && v:version > 800
     set notermguicolors
 endif
 colorscheme tender
