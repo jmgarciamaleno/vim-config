@@ -3,8 +3,8 @@
 set hidden " Don't close buffers with changes when you open another one.
 set number " Line numbers.
 " set relativenumber " Numbers relative to the cursor line.
-autocmd InsertEnter * silent! :set norelativenumber " Normal numbers in insert mode.
-autocmd InsertLeave * silent! :set relativenumber " Relative numbers in normal mode.
+" autocmd InsertEnter * silent! :set norelativenumber " Normal numbers in insert mode.
+" autocmd InsertLeave * silent! :set relativenumber " Relative numbers in normal mode.
 syntax on " Code syntax.
 set cursorline " Highlight the cursor line.
 set expandtab " Tab key insert spaces.
