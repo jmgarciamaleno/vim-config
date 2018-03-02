@@ -4,8 +4,6 @@ My personal vim config and plugins, PHP optimized. Looking for a vim reference? 
 
 I run only one vim instance and work with buffers (opened files). This allows to easily copy/paste content between them, run commands in all of them and keep a controlled set of classes and methods for omni-code completion. NerdTree, MiniBuffExplorer and CtrlP makes really easy to manage buffers.
 
-I've found handy to use line relative numbers so you can see the distance to the line where you want to jump and get there with a simple motion command. E.g: `10j` to jump 10 lines down. Normal line numbers are displayed in insert mode.
-
 This is how it looks like. You can see MiniBuffExplorer showing current buffers in the upper line:
 
 ![alt vim](vim.png)
