@@ -90,11 +90,10 @@ curl https://raw.githubusercontent.com/jmgarciamaleno/vim-config/master/jmgm-vim
 
 | Command | Action |
 |---------|--------|
-| ctrl-h | Previous buffer (h is left) |
-| ctrl-l | Next buffer (l is right) |
-| ctrl-n | Open/close NerdTree |
-| ctrl-p | Open/close Ctrl-P |
-| ctrl-t | Open/close TagBar |
+| ctrl-h  | Previous buffer (h is left) |
+| ctrl-l  | Next buffer (l is right) |
+| ctrl-n  | Open/close NerdTree |
+| ctrl-t  | Open/close TagBar |
 
 ## Plugins list
 
@@ -102,7 +101,6 @@ Light plugins which provide the features that I miss or improve the standard vim
 
 - [Ctrl-P](https://github.com/kien/ctrlp.vim)
 - [MiniBuffExplorer](https://github.com/fholgado/minibufexpl.vim)
-- [MultipleCursors](https://github.com/terryma/vim-multiple-cursors)
 - [NerdTree](https://github.com/scrooloose/nerdtree)
 - [PHPComplete](https://github.com/shawncplus/phpcomplete.vim)
 - [Snipmate](https://github.com/msanders/snipmate.vim)
@@ -110,7 +108,6 @@ Light plugins which provide the features that I miss or improve the standard vim
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [Vim-autoclose](https://github.com/Townk/vim-autoclose)
 - [Vim-JavaScript](https://github.com/pangloss/vim-javascript)
-- [Vim-JSON](https://github.com/elzr/vim-json)
 - [Vim-PHP-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer)
 - [Vim-Twig](https://github.com/beyondwords/vim-twig)
 - [Vim-yaml](https://github.com/stephpy/vim-yaml)
@@ -138,16 +135,6 @@ Fuzzy file finder. It works at the path of the buffer from which you open it so 
 | ctrl-d | Change mode between path, files and MRU |
 | ctrl-z | Mark multiple files |
 | ctrl-o | Open marked files |
-
-### Multiple-cursors
-
-This plugin allows to select the word under the cursor and the next occurrences, to edit them all at the same time.
-
-| Command | Action |
-|---------|--------|
-| ctrl-k | Switch to select mode and selects word under cursor and next occurrences |
-| ctrl-p | (Select mode) Deselect current word |
-| ctrl-x | Skip current selected word |
 
 ### Exuberant-ctags / Ctags
 
