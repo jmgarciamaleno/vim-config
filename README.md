@@ -1,8 +1,11 @@
 # Vim-config
 
-My personal vim config and plugins, PHP optimized. Looking for a vim reference? Check my [vim-reference](https://github.com/jmgarciamaleno/vim-reference) project.
+My personal vim config and plugins, PHP optimized. Looking for a vim reference? Check my
+[vim-reference](https://github.com/jmgarciamaleno/vim-reference) project.
 
-I run only one vim instance and work with buffers (opened files). This allows to easily copy/paste content between them, run commands in all of them and keep a controlled set of classes and methods for omni-code completion. NerdTree, MiniBuffExplorer and CtrlP makes really easy to manage buffers.
+I run only one vim instance and work with buffers (opened files). This allows to easily copy/paste
+content between them, run commands in all of them and keep a controlled set of classes and methods
+for omni-code completion. NerdTree, MiniBuffExplorer and CtrlP makes really easy to manage buffers.
 
 This is how it looks like. You can see MiniBuffExplorer showing current buffers in the upper line:
 
@@ -14,7 +17,8 @@ This is how it looks like. You can see MiniBuffExplorer showing current buffers 
 
 **Requires bash, curl and git**
 
-Script that backups your `~/.vim` folder and your `~/.vimrc` file, git clones my config in `~/vim-config` and creates symlinks to it.
+Script that backups your `~/.vim` folder and your `~/.vimrc` file, git clones my config in `~/vim-config`
+and creates symlinks to it.
 
 ```bash
 curl https://raw.githubusercontent.com/jmgarciamaleno/vim-config/master/jmgm-vim-install.sh | bash
@@ -72,7 +76,8 @@ curl https://raw.githubusercontent.com/jmgarciamaleno/vim-config/master/jmgm-vim
 
 ## Optional but highly recommended
 
-1. The vim feature *xterm-clipboard* allows to copy/paste content from/to the system clipboard (vim register `+` or `*`).  
+1. The vim feature *xterm-clipboard* allows to copy/paste content from/to the system clipboard
+(vim register `+` or `*`).
    Check `vim --version` to see which features are installed.
 
    In Ubuntu, the package *vim-gnome* adds the *xterm-clipboard* and other features to vim. To install it:  
@@ -84,7 +89,8 @@ curl https://raw.githubusercontent.com/jmgarciamaleno/vim-config/master/jmgm-vim
 
    Info about how to construct your tags file and use it inside vim below.
 
-3. For PHP: Install the shell tool [php-cs-fixer](http://cs.sensiolabs.org/) to keep PHP coding standards. The [vim-php-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer) plugin allows to make use of it from vim.
+3. For PHP: Install the shell tool [php-cs-fixer](http://cs.sensiolabs.org/) to keep PHP coding standards.
+The [vim-php-cs-fixer](https://github.com/stephpy/vim-php-cs-fixer) plugin allows to make use of it from vim.
 
 ## Custom mappings
 
@@ -130,7 +136,8 @@ Sidebar file explorer. Press `?` in NerdTree for quick key reference. Basic comm
 
 ### Ctrl-P
 
-Fuzzy file finder. It works at the path of the buffer from which you open it so I recommend to open NerdTree at your project root and open Ctrl-P from NerdTree.
+Fuzzy file finder. It works at the path of the buffer from which you open it so I recommend to open
+NerdTree at your project root and open Ctrl-P from NerdTree.
 
 | Command | Action |
 |---------|--------|
@@ -141,7 +148,8 @@ Fuzzy file finder. It works at the path of the buffer from which you open it so 
 
 ### Multiple-cursors
 
-This plugin allows to select the word under the cursor and the next occurrences, to edit them all at the same time.
+This plugin allows to select the word under the cursor and the next occurrences, to edit them all at
+the same time.
 
 | Command | Action |
 |---------|--------|
@@ -151,9 +159,11 @@ This plugin allows to select the word under the cursor and the next occurrences,
 
 ### Exuberant-ctags / Ctags
 
-Not a vim plugin but a shell tool. It constructs a tags file with classes, methods, ... for the given code language and folders.
+Not a vim plugin but a shell tool. It constructs a tags file with classes, methods, ... for the given
+code language and folders.
 
-Run this bash command (replace PHP with your code language) at your project root to construct the tags file with classes and methods only:
+Run this bash command (replace PHP with your code language) at your project root to construct the tags
+file with classes and methods only:
 
 ```bash
 exuberant-ctags --languages=PHP -R --links=no --PHP-kinds=cf <path1_to_your_code> <path2_to_your_code> ...
@@ -177,9 +187,11 @@ Run vim at your project root to make use of the created tags file.
 
 ### Vim-php-cs-fixer
 
-[Php-cs-fixer](http://cs.sensiolabs.org/) is a great shell tool to automatically fix PHP coding standards for the given file, or files under the given folder. This plugin allows to run it from vim.
+[Php-cs-fixer](http://cs.sensiolabs.org/) is a great shell tool to automatically fix PHP coding standards
+for the given file, or files under the given folder. This plugin allows to run it from vim.
 
-If you run `\pcf` without arguments, the current buffer is fixed and saved. Reload the buffer with `:e!` to see it updated.
+If you run `\pcf` without arguments, the current buffer is fixed and saved. Reload the buffer with
+`:e!` to see it updated.
 
 You can set the fixing level that you want to apply in your vim config (my default value is PSR2).
 
@@ -191,5 +203,4 @@ You can set the fixing level that you want to apply in your vim config (my defau
 
 ---
 
-<center>Jose Manuel García Maleno - jmgarciamaleno@gmail.com - @jmgarciamaleno</center>
-
+<center>Jose Manuel García Maleno - josemanuelgm@protonmail.com
