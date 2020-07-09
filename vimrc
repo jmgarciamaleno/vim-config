@@ -25,6 +25,7 @@ if !has('termguicolors') && v:version > 800
 endif
 colorscheme tender
 let blacklist = ['markdown'] " Array of filetypes where trailing spaces will not be removed on save.
+autocmd BufNewFile,BufRead *.j2  set filetype=jinja " Jinja2 syntax for *.j2 files.
 autocmd BufWritePre * if index(blacklist, &ft) < 0 | :%s/\s\+$//e " Remove trailing spaces on save.
 filetype plugin indent on " Filetype specific detection, plugins and indentation.
 set nofoldenable " Deactivate fold by default, set foldenable to activate.
