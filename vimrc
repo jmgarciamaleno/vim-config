@@ -7,6 +7,8 @@ set number " Line numbers.
 " autocmd InsertLeave * silent! :set relativenumber " Relative numbers in normal mode.
 syntax on " Code syntax.
 set cursorline " Highlight the cursor line.
+set list
+set listchars=tab:\|-\|
 set expandtab " Tab key insert spaces.
 set shiftwidth=4 " Number of spaces used for indentation.
 set softtabstop=4 " Backspace key treat the tab spaces as a single tab.
